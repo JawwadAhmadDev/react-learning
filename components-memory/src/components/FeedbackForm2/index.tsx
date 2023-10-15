@@ -1,10 +1,8 @@
-import { useState } from 'react';
-
+'use client'
 export default function FeedbackForm() {
-  const [name, setName] = useState('');
 
   function handleClick() {
-    setName(prompt('What is your name?'));
+    const name = prompt('What is your name?');
     alert(`Hello, ${name}!`);
   }
 
