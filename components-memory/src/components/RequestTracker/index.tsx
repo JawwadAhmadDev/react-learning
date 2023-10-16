@@ -7,8 +7,8 @@ export default function RequestTracker() {
     async function handleClick() {
         setPending(pending + 1);
         await delay(3000);
-        setPending(pending => pending - 1);
-        setCompleted(completed => completed + 1);
+        setPending(pending - 1);
+        setCompleted(completed + 1);
     }
 
     return (
