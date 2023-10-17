@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import { useImmer } from 'use-immer';
 
 interface Product {
     id: number;
@@ -34,6 +35,7 @@ export default function ShoppingCart() {
                 return {
                     ...product,
                     count: product.count + 1,
+
                 }
             }
             return product;
